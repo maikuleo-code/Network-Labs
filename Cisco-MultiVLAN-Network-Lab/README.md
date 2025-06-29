@@ -20,11 +20,12 @@ Practice spanning-tree modes for redundancy and loop prevention
 Document configurations clearly and consistently
 
 🧩 Lab Topology Summary
-Layer	Devices	Description
-Core Layer	1 Layer 3 Switch	Inter-VLAN routing via SVIs
-Distribution	2 Aggregated Switches	VLAN distribution via trunk links
-Access Layer	4 Access Switches	End device connectivity
-Servers	DHCP/DNS Server (VLAN 99)	IP address management & name resolution
+| Layer        | Devices                   | Description                             |
+| ------------ | ------------------------- | --------------------------------------- |
+| Core Layer   | 1 Layer 3 Switch          | Inter-VLAN routing via SVIs             |
+| Distribution | 2 Aggregated Switches     | VLAN distribution via trunk links       |
+| Access Layer | 4 Access Switches         | End device connectivity                 |
+| Servers      | DHCP/DNS Server (VLAN 99) | IP address management & name resolution |
 
 VLANs:
 
