@@ -1,0 +1,67 @@
+enable
+configure terminal
+!
+hostname CoreSwitch
+!
+ip routing                         ! Enables inter-VLAN routing
+spanning-tree mode pvst            ! Per-VLAN STP
+!
+! --- VLAN Interfaces (SVIs) ---
+interface Vlan10                   ! Admin
+ ip address 192.168.10.1 255.255.255.0
+ ip helper-address 192.168.99.10
+ no shutdown
+ exit
+
+interface Vlan20                   ! HR
+ ip address 192.168.20.1 255.255.255.0
+ ip helper-address 192.168.99.10
+ no shutdown
+ exit
+
+interface Vlan30                   ! Engineers
+ ip address 192.168.30.1 255.255.255.0
+ ip helper-address 192.168.99.10
+ no shutdown
+ exit
+
+interface Vlan40                   ! Architects
+ ip address 192.168.40.1 255.255.255.0
+ ip helper-address 192.168.99.10
+ no shutdown
+ exit
+
+interface Vlan50                   ! Security
+ ip address 192.168.50.1 255.255.255.0
+ ip helper-address 192.168.99.10
+ no shutdown
+ exit
+
+interface Vlan60                   ! Costumers
+ ip address 192.168.60.1 255.255.255.0
+ ip helper-address 192.168.99.10
+ no shutdown
+ exit
+
+interface Vlan99                   ! DHCP/DNS/Web Server Segment
+ ip address 192.168.99.1 255.255.255.0
+ no shutdown
+ exit
+
+! --- Trunk Ports to Aggregated/Access Switches ---
+interface FastEthernet0/1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30
+ exit
+
+interface FastEthernet0/2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk allowed vlan 40,50,60
+ exit
+
+interface FastEthernet0/4
+ switchport mode access
+ switchport access vlan 99
+ exit

@@ -1,0 +1,24 @@
+enable
+configure terminal
+!
+hostname AccessSwitch3
+!
+spanning-tree mode pvst               ! Standard PVST enabled
+spanning-tree extend system-id        ! Extends bridge ID for PVST+
+!
+! --- Uplink to Aggregated Switch ---
+interface FastEthernet0/1
+ switchport trunk allowed vlan 40
+ switchport mode trunk
+ exit
+
+! --- Access Ports for VLAN 40 ---
+interface FastEthernet0/2
+ switchport access vlan 40
+ switchport mode access
+ exit
+
+interface FastEthernet0/3
+ switchport access vlan 40
+ switchport mode access
+ exit

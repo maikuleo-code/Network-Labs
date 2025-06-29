@@ -1,0 +1,24 @@
+enable
+configure terminal
+!
+hostname AccessSwitch4
+!
+spanning-tree mode pvst               ! Standard STP (can match rest with rapid-pvst)
+spanning-tree extend system-id        ! Needed for PVST+ operation
+!
+! --- Uplink to Aggregated Switch ---
+interface FastEthernet0/1
+ switchport trunk allowed vlan 50,60
+ switchport mode trunk
+ exit
+
+! --- Access Ports for VLAN 50 and 60 ---
+interface FastEthernet0/2
+ switchport access vlan 50
+ switchport mode access
+ exit
+
+interface FastEthernet0/3
+ switchport access vlan 60
+ switchport mode access
+ exit

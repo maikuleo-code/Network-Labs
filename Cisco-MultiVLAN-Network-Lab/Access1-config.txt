@@ -1,0 +1,24 @@
+enable
+configure terminal
+!
+hostname AccessSwitch1
+!
+spanning-tree mode rapid-pvst       ! Faster spanning tree convergence
+spanning-tree extend system-id      ! Required when using PVST+
+!
+! --- Uplink to Aggregated Switch ---
+interface FastEthernet0/1
+ switchport trunk allowed vlan 10,20
+ switchport mode trunk
+ exit
+
+! --- Access Ports for VLAN 10 and 20 ---
+interface FastEthernet0/2
+ switchport access vlan 10
+ switchport mode access
+ exit
+
+interface FastEthernet0/3
+ switchport access vlan 20
+ switchport mode access
+ exit

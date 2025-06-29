@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Network Lab Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .container {
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+            width: 60%;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0073e6;
+        }
+        p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Network Lab</h1>
+        <p>This is a test page hosted in the lab environment.</p>
+        <p>Server is reachable. Network appears to be working.</p>
+        <p><strong>Timestamp:</strong> <span id="datetime"></span></p>
+    </div>
+
+    <script>
+        document.getElementById("datetime").textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
