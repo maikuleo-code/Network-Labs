@@ -1,8 +1,8 @@
-\# 🏢 **Enterprise Network Lab: HQ + Branches with OSPF, VLANs, DHCP, and Rapid PVST+**
+\# **Enterprise Network Lab: HQ + Branches with OSPF, VLANs, DHCP, and Rapid PVST+**
 
 
 
-\## 👨‍💻 Engineer
+\## Engineer
 
 \*\*Michael Leo Salamanca\*\*
 
@@ -14,7 +14,7 @@ Aspiring Network Security Engineer | Lab-Based Learner | Cisco \& Fortinet Focus
 
 
 
-\## 🧠 Project Overview
+\## Project Overview
 
 
 
@@ -42,7 +42,7 @@ This lab simulates an \*\*enterprise-grade hierarchical network\*\* that include
 
 
 
-\## 🗂️ Technologies Used
+\## Technologies Used
 
 
 
@@ -66,7 +66,7 @@ This lab simulates an \*\*enterprise-grade hierarchical network\*\* that include
 
 
 
-\## 🧱 VLAN Design
+\##  VLAN Design
 
 
 
@@ -106,7 +106,7 @@ This lab simulates an \*\*enterprise-grade hierarchical network\*\* that include
 
 
 
-\## 🌲 Spanning Tree Setup
+\##  Spanning Tree Setup
 
 
 
@@ -146,7 +146,7 @@ This lab simulates an \*\*enterprise-grade hierarchical network\*\* that include
 
 
 
-\## 📘 Files Included
+\##  Files Included
 
 
 
@@ -164,7 +164,7 @@ This lab simulates an \*\*enterprise-grade hierarchical network\*\* that include
 
 
 
-\## 🧭 Future Improvements
+\##  Future Improvements
 
 
 
