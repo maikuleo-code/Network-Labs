@@ -1,4 +1,5 @@
- Cisco-MultiVLAN-Network-Lab
+Cisco-MultiVLAN-Network-Lab
+
 📘 Overview
 This lab project is designed to simulate a real-world enterprise network using Cisco Packet Tracer, implementing a multi-VLAN architecture with a hierarchical network design (Core, Aggregated, and Access Layers). It serves as part of my self-paced study and skills enhancement in preparation for a career in network security and enterprise networking.
 
