@@ -1,28 +1,13 @@
-\# **Enterprise Network Lab: HQ + Branches with OSPF, VLANs, DHCP, and Rapid PVST+**
+**Enterprise Network Lab: HQ + Branches with OSPF, VLANs, DHCP, and Rapid PVST+**
 
-
-
-\## Engineer
-
-\*\*Michael Leo Salamanca\*\*
-
-Aspiring Network Security Engineer | Lab-Based Learner | Cisco \& Fortinet Focused
-
-
-
----
-
-
-
-\## Project Overview
-
+Project Overview
 
 
 This lab simulates an \*\*enterprise-grade hierarchical network\*\* that includes:
 
 
 
-\- A \*\*Headquarters (HQ)\*\* and \*\*two Branch sites\*\*
+A Headquarters (HQ) and two Branch sites.
 
 \- Fully segmented \*\*VLAN architecture\*\*
 
@@ -42,7 +27,7 @@ This lab simulates an \*\*enterprise-grade hierarchical network\*\* that include
 
 
 
-\## Technologies Used
+Technologies Used
 
 
 
@@ -66,8 +51,7 @@ This lab simulates an \*\*enterprise-grade hierarchical network\*\* that include
 
 
 
-\##  VLAN Design
-
+VLAN Design
 
 
 | Site       | VLANs        | Description            |
@@ -88,57 +72,50 @@ This lab simulates an \*\*enterprise-grade hierarchical network\*\* that include
 
 
 
-\## 🔀 Routing Overview
+🔀 Routing Overview
 
 
 
-\- \*\*OSPF Area 0\*\* for all routers (future plan: multi-area)
+- \*\*OSPF Area 0\*\* for all routers (future plan: multi-area)
 
-\- L3 Core handles \*\*SVIs\*\* for VLAN gatewaying
+- L3 Core handles \*\*SVIs\*\* for VLAN gatewaying
 
-\- Routers form OSPF adjacencies with Core and each other
+- Routers form OSPF adjacencies with Core and each other
 
-\- \*\*DHCP Helper\*\* used to relay requests from branches to HQ server
-
-
-
----
-
-
-
-\##  Spanning Tree Setup
-
-
-
-\- \*\*Mode:\*\* Rapid PVST+
-
-\- \*\*Core Switches:\*\* Root bridge with `priority 4096`
-
-\- \*\*Distribution Switches:\*\* Secondary root with `priority 8192`
-
-\- \*\*Access Ports:\*\* `portfast` + `bpduguard`
-
-\- \*\*Trunk Ports:\*\* `link-type point-to-point`
+- \*\*DHCP Helper\*\* used to relay requests from branches to HQ server
 
 
 
 ---
 
+Spanning Tree Setup
 
 
-\## ✅ Verification Checklist
+- \*\*Mode:\*\* Rapid PVST+
+
+- \*\*Core Switches:\*\* Root bridge with `priority 4096`
+
+- \*\*Distribution Switches:\*\* Secondary root with `priority 8192`
+
+- \*\*Access Ports:\*\* `portfast` + `bpduguard`
+
+- \*\*Trunk Ports:\*\* `link-type point-to-point`
 
 
+---
 
-\- \[x] VLANs communicate via inter-VLAN routing
+✅ Verification Checklist
 
-\- \[x] OSPF adjacencies formed between routers and core
 
-\- \[x] DHCP server assigns IPs across all sites
+- \[x] VLANs communicate via inter-VLAN routing
 
-\- \[x] STP prevents loops; root bridges manually controlled
+- \[x] OSPF adjacencies formed between routers and core
 
-\- \[x] Fully documented in `.docx`
+- \[x] DHCP server assigns IPs across all sites
+
+- \[x] STP prevents loops; root bridges manually controlled
+
+- \[x] Fully documented in `.docx`
 
 
 
@@ -163,9 +140,7 @@ This lab simulates an \*\*enterprise-grade hierarchical network\*\* that include
 ---
 
 
-
-\##  Future Improvements
-
+##  Future Improvements
 
 
 \- Convert OSPF to \*\*multi-area\*\*
