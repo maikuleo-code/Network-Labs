@@ -76,6 +76,9 @@ Key Features:
 - Replicate and enhance the project using GNS3 or EVE-NG
   
 9. About the Author
+   
 Michael Leo Salamanca
+
 Aspiring Network Security Engineer
+
 Focused on enterprise infrastructure, vendor certifications (Fortinet, Cisco), and real-world lab implementations to pursue mastery in network security and architecture.
