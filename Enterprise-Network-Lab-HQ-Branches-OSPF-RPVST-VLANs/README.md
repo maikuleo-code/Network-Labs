@@ -10,6 +10,7 @@ Date: 4/07/2025
 
 1. Project Overview
 This lab simulates a scalable, enterprise-grade hierarchical network architecture composed of a Headquarters (HQ) and two Branch Offices. It serves as a foundational hands-on project that demonstrates advanced routing, switching, redundancy, and service provisioning techniques using Cisco technologies.
+
 Key Features:
 - Multi-site VLAN segmentation
 - Layer 3 inter-VLAN routing via Core switches
@@ -19,19 +20,26 @@ Key Features:
 - Root bridge priority management for STP optimization
   
 2. Technologies and Design
-Layer	Technology
-Layer 2	VLANs, Rapid PVST+, PortFast, BPDU Guard
-Layer 3	Inter-VLAN Routing, OSPFv2, DHCP Relay
-Protocols	OSPFv2, STP, DHCP
-Design Model	3-Tier Hierarchical: Core, Distribution, Access
-Simulation	Cisco Packet Tracer
+## 🧰 Technologies Used
+
+| Layer        | Technology                                      |
+|--------------|-------------------------------------------------|
+| Layer 2      | VLANs, Rapid PVST+, PortFast, BPDU Guard        |
+| Layer 3      | Inter-VLAN Routing, OSPFv2, DHCP Relay          |
+| Protocols    | OSPFv2, STP, DHCP                               |
+| Design Model | 3-Tier Hierarchical: Core, Distribution, Access |
+| Simulation   | Cisco Packet Tracer                             |
+
 
 3. VLAN Structure
-Site	VLANs	Description
-HQ	10–80	User, IT, Voice, Admin, etc.
-Branch 1	90–110	Departmental VLANs for local use
-Branch 2	120–140	VLANs for remote site departments
-Global VLAN	50	Shared DHCP/DNS Server
+## 🗂 VLAN Design
+
+| Site        | VLANs     | Description                          |
+|-------------|-----------|--------------------------------------|
+| HQ          | 10–80     | User, IT, Voice, Admin, etc.         |
+| Branch 1    | 90–110    | Departmental VLANs for local use     |
+| Branch 2    | 120–140   | VLANs for remote site departments    |
+| Global VLAN | 50        | Shared DHCP/DNS Server               |
 
 4. Routing and DHCP Design
 - All routers and Layer 3 switches operate within OSPF Area 0
