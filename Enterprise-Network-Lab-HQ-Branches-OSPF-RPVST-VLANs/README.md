@@ -1,7 +1,11 @@
 Enterprise Network Lab Report
+
 Title: Enterprise Network Lab: HQ + Branches with OSPF, VLANs, DHCP, and Rapid PVST+
+
 Author: Michael Leo Salamanca
+
 Role: Aspiring Network Security Engineer
+
 Date: 4/07/2025
 
 1. Project Overview
